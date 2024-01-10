@@ -6,7 +6,9 @@ In the wake of the COVID-19 pandemic, the necessity of reducing virus transmissi
 
 The project integrates additional sensors for environmental temperature and humidity, enhancing the bin's utility and interaction with its surroundings. Its design, inspired by the charming “WALL-E” robot, aligns well with the sensor features and aims to deliver a positive emotional experience. The bin's smart lid opens automatically when an object approaches, thanks to a servo-driven mechanism. After disposing of trash, the lid closes automatically. An OLED display on the lid continuously shows the current temperature and humidity, alternating every five seconds with the playful message "Feed me." This project is not only a response to the heightened hygiene awareness during the pandemic but also a testament to how technological innovation can elevate the quality of daily life. By integrating sensor technology and smart control, this trash bin represents a harmonious blend of modern technology and practicality, potentially catering to a broad market. It's poised to play a significant role in both residential and office settings, contributing to health and environmental monitoring.
 
-![4ef4aa1b4513d19baf69ad6ec973db7](https://github.com/pumpkins628/RobotBin/assets/146323702/cad1a8b9-9130-4985-bf61-2ce48d46104d)
+
+https://github.com/pumpkins628/RobotBin/assets/146323702/1612e6c4-bf8f-4db3-9f2c-9683aace0e82
+
 
 ## Hardware section
 
