@@ -24,19 +24,42 @@ The project integrates additional sensors for environmental temperature and humi
 
 ### Wiring up
 
-Here is a picture for wiring, if you want to check more details ` （See ) ` to get raw file
+Here is a picture for wiring, if you want to check more details ` (See wiring ) ` to get raw file
 
-Servo Motor: Its control pin is connected to digital pin 8 on the Arduino Uno. The servo motor will be used for the automatic opening and closing of the trash bin lid.
+<img width="888" alt="a49e80fe65d45305544b7690eb4d2cd" src="https://github.com/pumpkins628/RobotBin/assets/146323702/61398654-e4f6-4f0d-a4f9-ebc7880eb914">
 
-Ultrasonic Sensor: It utilizes two digital pins. The Trig pin is connected to digital pin 11, responsible for sending out ultrasonic waves, and the Echo pin is connected to digital pin 12, used for receiving the echo. This setup allows the sensor to calculate distances by measuring the time difference between sending and receiving ultrasonic pulses.
 
-DHT22 Temperature and Humidity Sensor: This sensor's data pin is connected to digital pin 2 on the Arduino Uno. The DHT22 will provide real-time environmental temperature and humidity readings.
+**Servo Motor:** Its control pin is connected to digital pin 8 on the Arduino Uno. The servo motor will be used for the automatic opening and closing of the trash bin lid.
 
-OLED Display: The display is connected via I2C communication, using pins A4 (SDA) and A5 (SCL). This connection method simplifies the wiring as it requires only two wires for data and control signal transmission.
+**Ultrasonic Sensor:** It utilizes two digital pins. The Trig pin is connected to digital pin 11, responsible for sending out ultrasonic waves, and the Echo pin is connected to digital pin 12, used for receiving the echo. This setup allows the sensor to calculate distances by measuring the time difference between sending and receiving ultrasonic pulses.
+
+**DHT22 Temperature and Humidity Sensor:** This sensor's data pin is connected to digital pin 2 on the Arduino Uno. The DHT22 will provide real-time environmental temperature and humidity readings.
+
+**OLED Display:** The display is connected via I2C communication, using pins A4 (SDA) and A5 (SCL). This connection method simplifies the wiring as it requires only two wires for data and control signal transmission.
 
 It's important to be cautious during the wiring process to avoid incorrect connections of these pins. Such an arrangement ensures that each component can function correctly and communicate with the Arduino Uno for the desired operations of your smart trash bin project.
 
+### Assembly
 
+Drill holes on desktop trash bin to fit my design and place various components in their designated spots, securing them in place. Soldering the components to jumper wires significantly increased the system's stability, preventing malfunctions caused by poor connections.
+
+![598abce3872a138931277ccd697f45c](https://github.com/pumpkins628/RobotBin/assets/146323702/5c542c42-5b90-44b4-bdd3-323df5b14dbf)
+
+Each component needs a power supply, but the Arduino Uno has limited power interfaces, not enough for all components. To solve this, use a small stripboard to extend the power and ground lines from the Arduino Uno and soldered the rest of the components to this board. This ensured that all components received adequate power.
+
+![f5198ffd3fad454602b6a7f4301454b](https://github.com/pumpkins628/RobotBin/assets/146323702/e4c890e8-90ab-4916-99a7-cbd3d640020a)
+
+Next, craft an "arm" mechanism to open the trash bin's lid. Choose two wooden sticks of different lengths and fixed them inside a straw, forming an "L" shape. When the servo's angle changes, the shorter stick moves, acting like a lever at the joint, causing the longer stick to pull the lid open, enabling automatic lid opening.
+
+**The lid is open when the straws and sticks are in the state**
+<img width="298" alt="image" src="https://github.com/pumpkins628/RobotBin/assets/146323702/9bc0f6ca-5c7d-43b7-9d7a-a24ed2c0c931">
+
+**The lid is open when the straws and sticks are in the state**
+<img width="292" alt="image" src="https://github.com/pumpkins628/RobotBin/assets/146323702/c9f1835e-c4d0-4588-a928-b2283b611eba">
+
+## Coding section
+
+Just check 
 
 
 
