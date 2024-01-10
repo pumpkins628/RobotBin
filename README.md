@@ -52,14 +52,28 @@ Each component needs a power supply, but the Arduino Uno has limited power inter
 Next, craft an "arm" mechanism to open the trash bin's lid. Choose two wooden sticks of different lengths and fixed them inside a straw, forming an "L" shape. When the servo's angle changes, the shorter stick moves, acting like a lever at the joint, causing the longer stick to pull the lid open, enabling automatic lid opening.
 
 **The lid is open when the straws and sticks are in the state**
+
 <img width="298" alt="image" src="https://github.com/pumpkins628/RobotBin/assets/146323702/9bc0f6ca-5c7d-43b7-9d7a-a24ed2c0c931">
 
 **The lid is open when the straws and sticks are in the state**
+
 <img width="292" alt="image" src="https://github.com/pumpkins628/RobotBin/assets/146323702/c9f1835e-c4d0-4588-a928-b2283b611eba">
 
 ## Coding section
 
-Just check 
+Just check ` (Final_part 2.0) ` for the full code
 
+In the setup() function, all devices and sensors are initialized and set to their appropriate modes (input or output). Specifically, the servo is attached to its pin and assigned to its initial position. Serial communication is also initialized for debugging and data output. This allows us to visually receive data from the sensors and check the serial monitor for correctness when the system isn't functioning as expected.
+
+The ultrasonic sensor first checks the distance in the main loop() function. If the detected distance is less than a set threshold (here, 14cm), the servo is instructed to open the trash bin lid (using my servo. write(0)). Otherwise, it closes. This design allows the trash bin to open automatically when an object approaches, offering convenience and reducing contact.
+
+Additionally, a timer in the code controls the content update of the OLED display. For every specific interval (set here as 5 seconds), the display alternates between "Feed me!" and the readings from the DHT22 sensor. This enhances user interaction and keeps users informed about the environmental conditions around the trash bin.
+
+**The triggering conditions for the servo and the content displayed on the OLED can be customized according to your needs, allowing you to create your intelligent lid-opening trash bin. For example, you could set the system's activation distance threshold to 20cm, keeping the bin lid open longer. You could also change the "Feed me!" display to "Smile" as a personal encouragement.**
+
+
+# Hope you enjoy thie projct and build your own RobotBin! 
+If you want to get more information, please click here.
+[Report for CASA0016.pdf](https://github.com/pumpkins628/RobotBin/files/13882155/Report.for.CASA0016.pdf)
 
 
