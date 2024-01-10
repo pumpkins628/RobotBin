@@ -61,7 +61,7 @@ Next, craft an "arm" mechanism to open the trash bin's lid. Choose two wooden st
 
 ## Coding section
 
-Just check ` (Final_part 2.0) ` for the full code
+Just check ` (Final_part 2.0) ` for the full code.
 
 In the setup() function, all devices and sensors are initialized and set to their appropriate modes (input or output). Specifically, the servo is attached to its pin and assigned to its initial position. Serial communication is also initialized for debugging and data output. This allows us to visually receive data from the sensors and check the serial monitor for correctness when the system isn't functioning as expected.
 
